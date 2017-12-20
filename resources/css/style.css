@@ -1,0 +1,31 @@
+html {
+    font-size: 18px;
+    font-family: Helvetica;
+    line-height: 1.4;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: cadetblue;
+    color:  white;
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+.header-item {
+    display: flex;
+}
+
+.logo img {
+    height: 1.5rem;
+}
+
+.main-banner {
+
+}
