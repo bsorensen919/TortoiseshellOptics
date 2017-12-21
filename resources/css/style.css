@@ -9,9 +9,12 @@ html {
     margin: 0 auto;
 }
 
+/* Header Styling */
+
 .header-nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: cadetblue;
     color:  white;
     margin-top: 1rem;
@@ -19,13 +22,62 @@ html {
 }
 
 .header-item {
-    display: flex;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.menu li {
+    margin-right: 2rem;
+    display: inline;
 }
 
 .logo img {
     height: 1.5rem;
+    margin-right: 1rem;
 }
+
+.logo {
+    display: inline;
+    margin-left: 2rem;
+}
+
+/* Main Banner - picture and text block */
 
 .main-banner {
 
 }
+
+
+/* Offerings */
+
+.offering-container {
+/*    border: 1px solid red; */
+
+    display: flex;
+    margin-top: 3rem;
+    justify-content: space-around;
+}
+
+.offering-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 8rem;
+    width: 5rem;
+}
+
+/* Individual Items */
+
+.item-paper img {
+    width: 3.5rem;
+}
+.item-ruler img, .item-truck img {
+    width: 5rem;
+}
+
+/* Info Blocks */
+
+
+
+/* Footer */
