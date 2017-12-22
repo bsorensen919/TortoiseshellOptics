@@ -9,8 +9,16 @@ html {
     margin: 0 auto;
 }
 
-/* Header Styling */
+/* Main Banner - picture and text block */
+.main-banner {
+    background-image: url(../glasses-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 30rem;
+}
 
+/* Within the main banner - logo and menu */
 .header-nav {
     display: flex;
     justify-content: space-between;
@@ -26,7 +34,7 @@ html {
     margin-bottom: 1rem;
 }
 
-.menu li {
+.menu-large li {
     margin-right: 2rem;
     display: inline;
 }
@@ -41,12 +49,35 @@ html {
     margin-left: 2rem;
 }
 
-/* Main Banner - picture and text block */
-
-.main-banner {
+.headline {
+    background-color: white;
+    margin-top: 10rem;
+    margin-left: 450px;
+    width: 40rem;
 
 }
 
+.headline h1 {
+    line-height: 1.2;
+    font-size: 2rem;
+    padding: 1.5rem 5rem;
+    font-weight: bold;
+}
+
+.menu-small{
+    display: none;
+}
+
+/* Media Queries for the main header */
+@media only screen and (max-width: 470px)
+{
+    .menu-small {
+        display: inline;
+    }
+    .menu-large {
+        display: none;
+    }
+}
 
 /* Offerings */
 
@@ -76,8 +107,60 @@ html {
     width: 5rem;
 }
 
-/* Info Blocks */
+@media only sceen and (max-width: 470) {
+    .offering-container {
+        flex-direction: column;
+        margin-top: 3.77rem;
+    }
 
+    .offering-container {
+        margin-top: 1.54rem;
+    }
+}
+
+/* Info Blocks */
+.info-container {
+    display: flex;
+    margin-bottom: 5rem;
+}
+
+.info-item {
+    width: 35%;
+    margin-right: 5%;
+}
+
+.info-heading {
+    background-color: cadetblue;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    width: 10rem;
+    padding-left: 1.25rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
 
 
 /* Footer */
+
+.footer-container {
+    display: flex;
+    background-color: azure;
+    align-items: center;
+}
+
+.footer-container img, .footer-container span{
+    height: 1.5rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.footer-container img {
+    margin-left: 4rem;
+}
+
+.footer-container span {
+    margin-left: 1rem;
+}
